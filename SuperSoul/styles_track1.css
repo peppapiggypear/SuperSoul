@@ -1,0 +1,143 @@
+header {
+    background-color: darkolivegreen; 
+    color: white;
+    text-align: center; 
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+}
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    margin: 0; 
+    letter-spacing: 1.2px; 
+}
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background: lightgrey; 
+    color: rgb(47, 71, 4); 
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px; 
+    border-collapse: collapse; 
+    background: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+th {
+    background: darkolivegreen;
+    color: white; 
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 14px;
+    color: #555; 
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+table table {
+    width: 100%; 
+    margin-top: 10px; 
+    border-collapse: collapse;
+}
+
+
+table table th {
+    background: #f8f8f8; 
+    color: #555; 
+    padding: 8px; 
+    font-size: 13px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+
+table table td {
+    padding: 8px;
+    font-size: 13px;
+    color: #666; 
+}
+
+tr:hover {
+    background: #f7efe6; 
+}
+
+button {
+    background: darkolivegreen; 
+    color: white;
+    border: none;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background: #33312f; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    background: darkgreen; 
+    transform: scale(1); 
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+}
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(173, 186, 151);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: darkolivegreen;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px; 
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 12px; 
+    }
+}
+

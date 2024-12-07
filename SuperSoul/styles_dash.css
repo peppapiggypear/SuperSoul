@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f6f6f6; 
+    color: #f6f6f6; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    background: darkolivegreen;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(173, 186, 151);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(33.333% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: darkolivegreen;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: darkolivegreen;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: darkgreen; 
+}
+
+button:active {
+    background: rgb(38, 57, 5);
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: darkolivegreen;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f6f6f6;
+    color: #777;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}

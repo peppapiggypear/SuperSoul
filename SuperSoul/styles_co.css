@@ -1,0 +1,160 @@
+header {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    margin: 0;
+    letter-spacing: 1.2px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(244, 238, 228);
+    color: #333; 
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styling */
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background: #fff; /* White background for table */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+table th {
+    background: rgb(55, 55, 55); /* Vibrant blue header */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tr:last-child td {
+    border-bottom: none; /* No border for the last row */
+}
+
+table td {
+    color: #555; /* Slightly lighter grey for content */
+}
+
+/* Total Amount Row */
+table tr:last-child {
+    background: #f8f9fa; /* Subtle highlight for total row */
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    margin: 20px auto;
+    background: #fff; /* White background for the form */
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555;
+}
+
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus,
+form select:focus {
+    border-color: #af7c4c; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background: rgb(55, 55, 55); /* Vibrant blue */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background: #af7c4c; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    background: #b06116; /* Dark blue on active click */
+    transform: scale(1); /* Reset scale */
+}
+
+/* Empty Cart Message */
+p {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form textarea, form select {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
